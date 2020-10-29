@@ -21,8 +21,16 @@ new hobs.TestSuite("WKND Sites Project Tests", {path:"/apps/wknd/tests/SampleTes
         .asserts.visible(".helloworld", true)
     )
 
+    .addTestCase(new hobs.TestCase("Hello World component on english page")
+        .navigateTo("/content/wknd/en.html")
+        .asserts.location("/content/wknd/en.html", true)
+        .asserts.visible(".retoshen", true)
+    )
+
     .addTestCase(new hobs.TestCase("Hello World component on french page")
         .navigateTo("/content/wknd/fr.html")
         .asserts.location("/content/wknd/fr.html", true)
         .asserts.visible(".helloworld", true)
     );
+
+

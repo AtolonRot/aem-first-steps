@@ -42,6 +42,7 @@
                             <goal>bnd-process</goal>
                         </goals>
                         <configuration>
+                            <!--suppress UnresolvedMavenProperty -->
                             <bnd><![CDATA[
 Bundle-Category: WKND
 Import-Package: javax.annotation;version=0.0.0,*

@@ -1,0 +1,9 @@
+<div>
+    <h1>Páginas hijas:</h1>
+    test
+    <sly data-sly-use.pageListing="com.adobe.aem.guides.wknd.core.models.RetoShenModel"/>
+    <sly data-sly-list.iteratePageList="${pageListing.datafromModelList}">
+        <h2>${iteratePageList.title}</h2>
+        <p>${iteratePageList.path}</p>
+    </sly>
+</div>
